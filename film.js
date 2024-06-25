@@ -73,9 +73,11 @@ const renderFilm = film => {
     document.title = `SWAPI - ${film?.title}`;
     title.textContent = film?.title
     episode.textContent = film?.episode_id;
-    director.textContent = film?.director
-    producer.textContent = film?.producer
-
+    director.textContent = film?.director;
+    producer.textContent = film?.producer;
+    release.textContent = film?.release_date;
+    //opening_crawl.textContent = film?.opening_crawl;
+   
 
 
    
