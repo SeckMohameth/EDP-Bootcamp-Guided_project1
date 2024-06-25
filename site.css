@@ -74,6 +74,11 @@ h1#name {
   margin: 50px;
 }
 
+/* Planet page */
+h1#planetName {
+  margin: 50px;
+}
+
 #generalInfo {
   display: flex;
   flex-wrap: wrap;
