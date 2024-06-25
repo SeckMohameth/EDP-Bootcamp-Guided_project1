@@ -10,11 +10,11 @@ const baseUrl = `https://swapi2.azurewebsites.net/api`;
 
 // Runs on page load
 addEventListener('DOMContentLoaded', () => {
-    title = document.querySelector('title');
-    episode = document.querySelector('episode');
+    title = document.querySelector('span#title');
+    episode = document.querySelector('span#episode');
     director = document.querySelector('span#director');
     opening_crawl = document.querySelector('span#openiong_crawl');
-    producer = document.querySelector('span#produceer');
+    producer = document.querySelector('span#producer');
     release = document.querySelector('span#release');
 
         
@@ -54,7 +54,7 @@ async function getFilms(id) {
       }
       
       async function fetchFilms(id) {
-        const url = `${baseUrl}/characters/${id?.id}/films`;
+        const url = `${baseUrl}/films/${id}`;
         const films = await fetch(url)
           .then(res => res.json())
         return films;
@@ -62,11 +62,18 @@ async function getFilms(id) {
 
 
 
-
-
 const renderFilm = film => {
     console.log(film); // see data in console
-    document.title = `SWAPI - ${film?.name}`;  
+    document.title = `SWAPI - ${film?.title}`;
+    title.textContent = film?.title
+    episode.textContent = film?.episode_id;
+    director.textContent = film?.director
+    producer.textContent = film?.producer
+
+
+
+
+    
   }
 
 
