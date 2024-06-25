@@ -70,6 +70,6 @@ const renderFilm = film => {
   opening_crawl.textContent = film?.opening_crawl;
   const charsLis = film?.characters?.map(character => `<li><a href="/character.html?id=${character.id}">${character.name}</li>`);
   characterList.innerHTML = charsLis.join("");
-  const planetsLis = film?.planets?.map(planet => `<li><a href="/film.html?id=${planet.id}">${planet.name}</li>`);
+  const planetsLis = film?.planets?.map(planet => `<li><a href="/planet.html?id=${planet.id}">${planet.name}</li>`);
   planetsList.innerHTML = planetsLis.join("");
 }
