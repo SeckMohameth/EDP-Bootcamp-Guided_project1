@@ -6,16 +6,24 @@
     <title>Films</title>
     <script src="film.js" defer></script>
     <link rel="stylesheet" href="site.css" />
-
+    <style>
+        #film {
+            box-shadow: 12px -5px 18px 7px rgba(43,28,255,0.61);
+            padding: 20px;
+            margin: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <div id="film"></div>
-    <h1>Title: <span id="title"></span></h1>
-    <p>Episode: <span id="episode"></span></p>
-    <p>Opening Crawl: <span id="opening_crawl"></span></p>
-    <p>Director: <span id="director"></span></p>
-    <p>Producer: <span id="producer"></span></p>
-    <p>Release Date: <span id="release"></span></p>
+    <div id="film">
+    <h1>Movie: <span id="title"></span></h1>
+    <p><b>Episode:</b> <span id="episode"></span></p>
+    <p><b>Opening Crawl:</b> <span id="opening_crawl"></span></p>
+    <p><b>Director:</b> <span id="director"></span></p>
+    <p><b>Producer:</b> <span id="producer"></span></p>
+    <p><b>Release Date:</b> <span id="release"></span></p>
+    </div>
     <section id="characters">
         <h2>Characters</h2>
         <ul></ul>                                 

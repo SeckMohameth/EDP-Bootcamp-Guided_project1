@@ -15,7 +15,7 @@ addEventListener('DOMContentLoaded', () => {
     title = document.querySelector('span#title');
     episode = document.querySelector('span#episode');
     director = document.querySelector('span#director');
-    opening_crawl = document.querySelector('span#openiong_crawl');
+    opening_crawl = document.querySelector('span#opening_crawl');
     producer = document.querySelector('span#producer');
     release = document.querySelector('span#release');
     charactersList = document.querySelector('#characters>ul');
@@ -76,7 +76,7 @@ const renderFilm = film => {
     director.textContent = film?.director;
     producer.textContent = film?.producer;
     release.textContent = film?.release_date;
-    //opening_crawl.textContent = film?.opening_crawl;
+    opening_crawl.textContent = film?.opening_crawl;
    
 
 
